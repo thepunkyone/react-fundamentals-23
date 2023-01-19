@@ -11,11 +11,11 @@
     // You're going to re-implement this code using React!
     // 💣 So go ahead and delete this implementation (or comment it out for now)
     // These three lines are similar to React.createElement
-    const hello = React.createElement('span', {children: 'Hello'})
-    const world = React.createElement('span', {children: 'World'})
+    const hello = React.createElement('span', {}, 'Hello')
+    const world = React.createElement('span', {}, 'World')
 
     const element = React.createElement('div', {
-      children: [hello, world],
+      children: [hello, ' ', world],
       className: 'container',
     })
 
