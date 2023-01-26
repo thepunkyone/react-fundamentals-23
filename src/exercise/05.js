@@ -7,7 +7,7 @@ import '../box-styles.css'
 const Box = ({size, style}) => {
   return (
     <div className={`box box--${size}`} style={{fontStyle: 'italic', ...style}}>
-      small {style.backgroundColor} box
+      {size} {style.backgroundColor} box
     </div>
   )
 }
